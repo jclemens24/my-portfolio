@@ -870,3 +870,9 @@ footer {
   left: 0;
   margin-left: -60px;
 }
+
+.timeline__prelude {
+  text-align: center;
+  padding: 1em 0;
+  text-shadow: 1px 1px 1px var(--color-secondary);
+}
