@@ -31,15 +31,6 @@ body {
   min-height: 100vh;
 }
 
-@media only screen and (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
-  .nav__item {
-    font-size: 14px;
-  }
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -673,6 +664,10 @@ footer {
     font-size: 80%;
   }
 
+  .header {
+    font-size: 10px;
+  }
+
   .photo-me {
     min-height: 15rem;
     min-width: 15rem;
@@ -738,9 +733,28 @@ footer {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   body {
     font-size: 62.5%;
+  }
+
+  div.about__me--container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .card-container {
+    padding: 0;
+  }
+
+  .card h5 {
+    text-align: center;
+  }
+
+  .card p,
+  .card ul {
+    padding: 0 2em;
   }
 
   .contact__container {
