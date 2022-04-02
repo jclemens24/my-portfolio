@@ -356,7 +356,7 @@ hr {
   border-radius: 10px;
   background-color: var(--color-white);
   transition: box-shadow 1s ease;
-  height: 60rem;
+  height: 55rem;
 }
 
 .project:hover {
@@ -662,6 +662,7 @@ footer {
 
   .project {
     font-size: 90%;
+    height: 60rem;
   }
 }
 
