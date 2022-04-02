@@ -355,7 +355,7 @@ hr {
   border-radius: 10px;
   background-color: var(--color-white);
   transition: box-shadow 1s ease;
-  flex: 1;
+  height: 54rem;
 }
 
 .project:hover {
@@ -458,7 +458,7 @@ hr {
 
 .dots {
   position: absolute;
-  bottom: 10%;
+  bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
