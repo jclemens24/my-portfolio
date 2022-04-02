@@ -370,7 +370,7 @@ hr {
   flex: 1;
 }
 
-.project__info h5 {
+.project__info h3 {
   color: var(--color-primary);
   font-weight: 600;
   margin-bottom: 1em;
