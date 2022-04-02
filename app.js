@@ -9,6 +9,7 @@ const shootingStar = document.querySelector('.shootingStar');
 const headerName = document.querySelector('.about__me--name');
 const sliderExists = document.querySelector('.slider');
 const icons = document.querySelectorAll('.skill-language-row-icons');
+
 const starNum = 60;
 const shootingStarNum = 30;
 
