@@ -713,7 +713,6 @@ footer {
   .languages-card {
     padding: 1em 0;
     align-items: flex-start;
-    width: 100%;
   }
 
   .languages-card p {
@@ -726,7 +725,6 @@ footer {
 
   .contact__inner {
     width: 80%;
-    font-size: 2em;
   }
 
   .project {
@@ -735,6 +733,16 @@ footer {
 
   .dots {
     bottom: 1%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 62.5%;
+  }
+
+  .contact__container {
+    width: 100%;
   }
 }
 
