@@ -733,6 +733,10 @@ footer {
   .project {
     font-size: 80%;
   }
+
+  .dots {
+    bottom: 1%;
+  }
 }
 
 /* aboutme.html Styles */
