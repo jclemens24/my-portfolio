@@ -355,7 +355,7 @@ hr {
   border-radius: 10px;
   background-color: var(--color-white);
   transition: box-shadow 1s ease;
-  height: 54rem;
+  height: 60rem;
 }
 
 .project:hover {
@@ -376,7 +376,7 @@ hr {
 .project__info {
   display: flex;
   flex-direction: column;
-  flex: 4;
+  flex: 1;
 }
 
 .project__info h5 {
@@ -392,7 +392,7 @@ hr {
   font-weight: 400;
   margin-bottom: 1em;
   font-size: 20px;
-  flex: 2 0 auto;
+  flex: 1;
 }
 
 .project_tags span {
@@ -658,6 +658,10 @@ footer {
   .about__me--name {
     font-size: 2.5rem;
   }
+
+  .project {
+    font-size: 90%;
+  }
 }
 
 /* MOBILE DEVICES */
@@ -722,6 +726,10 @@ footer {
   .contact__inner {
     width: 80%;
     font-size: 2em;
+  }
+
+  .project {
+    font-size: 80%;
   }
 }
 
