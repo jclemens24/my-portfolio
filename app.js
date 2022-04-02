@@ -138,7 +138,7 @@ if (sliderExists) {
     slides.forEach(function (_, i) {
       dotsContainer.insertAdjacentHTML(
         'beforeend',
-        `<button class="dots__dot" data-slide="${i}"></button>`
+        `<button role="button" aria-label="Go To This Slide" class="dots__dot" data-slide="${i}"></button>`
       );
     });
   };

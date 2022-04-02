@@ -46,7 +46,7 @@
           and deploying fast, scalable, and secure backends. Want to hear more
           about my story?
         </p>
-        <button class="btn btn-cta">
+        <button aria-label="More about me link" role="link" class="btn btn-cta">
           <a href="./aboutme.html">About Me</a>
           <svg class="icon icon-arrow">
             <use xlink:href="img/icons.svg#icon-arrow-right"></use>
@@ -128,7 +128,10 @@
                 </div>
               </ul>
             </div>
-            <img src="./img/Web development _Flatline.png" />
+            <img
+              src="./img/Web development _Flatline.png"
+              alt="Putting together a website"
+            />
             <div class="card-footer">
               <svg class="skill-language-row-icons">
                 <use xlink:href="img/icons.svg#icon-html5"></use>
@@ -159,7 +162,10 @@
                 <use xlink:href="img/icons.svg#icon-react"></use>
               </svg>
             </div>
-            <img src="./img/Web development _Outline.png" />
+            <img
+              src="./img/Web development _Outline.png"
+              alt="Computer Coding Screen"
+            />
             <div class="card-info--skills">
               <h5 class="title">Web Development</h5>
               <p>
@@ -173,7 +179,7 @@
                   <svg class="skill-icon">
                     <use xlink:href="img/icons.svg#icon-check-circle"></use>
                   </svg>
-                  <li>
+                  <li class="skill-highlight">
                     Experience developing full-stack web apps with React/NextJS,
                     Angular/NestJS, and Vue/NuxtJS
                   </li>
@@ -235,7 +241,7 @@
                 alt="Social Media web app"
               />
               <div class="project__info">
-                <h5 class="title">Mad Chatter</h5>
+                <h3 class="title">Mad Chatter</h3>
                 <p>
                   The Mad Chatter is a fully-featured social web application
                   developed with React on the front-end and NodeJS on the
@@ -256,7 +262,12 @@
                   <span>MongoDB</span>
                 </div>
                 <div class="project_actions">
-                  <button type="button" class="btn">
+                  <button
+                    aria-label="Go To Mad Chatter Website"
+                    role="link"
+                    type="button"
+                    class="btn"
+                  >
                     <a href="https://mad-chatter-app.web.app/" target="_blank"
                       >Website</a
                     >
@@ -269,7 +280,7 @@
             <div class="project project-2">
               <img src="./img/forkify-demo.jpg" alt="Recipe's App" />
               <div class="project__info">
-                <h5 class="title">Forkify</h5>
+                <h3 class="title">Forkify</h3>
                 <p>
                   Forkify is a Recipe's website built with JavaScript ES6
                   classes, adhering to the MVC and publisher/subscriber model.
@@ -290,7 +301,12 @@
                   <span>SVG</span>
                 </div>
                 <div class="project_actions">
-                  <button type="button" class="btn">
+                  <button
+                    aria-label="Go To Forkify Website"
+                    role="link"
+                    type="button"
+                    class="btn"
+                  >
                     <a href="https://forkify-jmc.netlify.app/" target="_blank"
                       >Website</a
                     >
@@ -303,7 +319,7 @@
             <div class="project project-3">
               <img src="./img/natours-demo.jpg" alt="Natours App" />
               <div class="project__info">
-                <h5 class="title">Natours</h5>
+                <h3 class="title">Natours</h3>
                 <p>
                   Natours is a tour booking service web app that generates views
                   server-side (SSR) with Pug templates. Some features include
@@ -324,7 +340,12 @@
                   <span>MongoDB</span>
                 </div>
                 <div class="project_actions">
-                  <button type="button" class="btn">
+                  <button
+                    aria-label="Go To Natours Website"
+                    role="link"
+                    type="button"
+                    class="btn"
+                  >
                     <a
                       href="https://natours-trails.herokuapp.com/"
                       target="_blank"
@@ -339,7 +360,7 @@
             <div class="project project-4">
               <img src="./img/meal-steal-demo.jpg" alt="Recipe's App" />
               <div class="project__info">
-                <h5 class="title">MealSteal</h5>
+                <h3 class="title">MealSteal</h3>
                 <p>
                   The idea behind "MealSteal" (not a great name, I admit😋) is
                   to be a food delivery web application. Built entirely with
@@ -356,7 +377,12 @@
                   <span>Context Provider</span>
                 </div>
                 <div class="project_actions">
-                  <button type="button" class="btn">
+                  <button
+                    aria-label="Go To MealSteal Website"
+                    role="link"
+                    type="button"
+                    class="btn"
+                  >
                     <a
                       href="https://mealsforsteals.netlify.app/"
                       target="_blank"
@@ -371,7 +397,7 @@
             <div class="project project-5">
               <img src="./img/mapty_demo.jpg" alt="Workout App" />
               <div class="project__info">
-                <h5 class="title">MyMapty</h5>
+                <h3 class="title">MyMapty</h3>
                 <p>
                   MyMapty is one of the first projects I ever built utilizing
                   JavaScript ES6 classes, HTML & CSS. MyMapty gets the end-user
@@ -392,7 +418,12 @@
                   <span>Local Storage</span>
                 </div>
                 <div class="project_actions">
-                  <button type="button" class="btn">
+                  <button
+                    aria-label="Request A Demo"
+                    role="dialog"
+                    type="button"
+                    class="btn"
+                  >
                     <a>Demo</a>
                   </button>
                 </div>
@@ -403,7 +434,7 @@
             <div class="project project-6">
               <img src="./img/cab_coffee_demo.jpg" alt="Coffee Shop App" />
               <div class="project__info">
-                <h5 class="title">CAB Coffee</h5>
+                <h3 class="title">CAB Coffee</h3>
                 <p>
                   The inspiration to create CAB Coffee Shop came about during my
                   time at Penn State University. The project is a collaboration
@@ -432,12 +463,20 @@
               </div>
             </div>
           </div>
-          <button class="slider__btn slider__btn--left">
+          <button
+            aria-label="Previous Slide"
+            role="button"
+            class="slider__btn slider__btn--left"
+          >
             <svg class="icon icon-arrow-left">
               <use href="img/icons.svg#icon-arrow-left"></use>
             </svg>
           </button>
-          <button class="slider__btn slider__btn--right">
+          <button
+            aria-label="Next Slide"
+            role="button"
+            class="slider__btn slider__btn--right"
+          >
             <svg class="icon icon-arrow-right">
               <use href="img/icons.svg#icon-arrow-right"></use>
             </svg>
@@ -519,7 +558,13 @@
                 >
                 </textarea>
               </div>
-              <button id="contact-form-button">Send It!</button>
+              <button
+                aria-label="Send Me an Email"
+                role="button"
+                id="contact-form-button"
+              >
+                Send It!
+              </button>
             </form>
           </div>
         </div>
