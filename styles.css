@@ -760,6 +760,40 @@ footer {
   .contact__container {
     width: 100%;
   }
+
+  main.aboutme {
+    padding: 2em 0;
+  }
+
+  div.timeline {
+    padding: 5px;
+  }
+
+  .image {
+    height: 60px !important;
+    width: 60px !important;
+  }
+
+  .content {
+    padding: 5px !important;
+  }
+
+  .container-left {
+    padding-right: 30px !important;
+  }
+  .container-right {
+    padding-left: 30px !important;
+  }
+
+  .container-left .image {
+    right: 0;
+    margin-right: -30px !important;
+  }
+
+  .container-right .image {
+    left: 0;
+    margin-left: -30px !important;
+  }
 }
 
 /* aboutme.html Styles */
