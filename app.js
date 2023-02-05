@@ -77,8 +77,8 @@ const getRandomY = () => {
   return Math.floor(Math.random() * Math.floor(windowHeight)).toString();
 };
 
-[...Array(starNum)].map(() => {
-  return sky.insertAdjacentHTML(
+[...Array(starNum)].forEach(() => {
+  sky.insertAdjacentHTML(
     'afterbegin',
     `
   <circle cx=${getRandomX()} cy=${getRandomY()} r=${getRandomRadius()} stroke='none' strokeWidth='0' fill='white' class='star'></circle>
@@ -86,8 +86,8 @@ const getRandomY = () => {
   );
 });
 
-[...Array(shootingStarNum)].map(() => {
-  return shootingStar.insertAdjacentHTML(
+[...Array(shootingStarNum)].forEach(() => {
+  shootingStar.insertAdjacentHTML(
     'afterbegin',
     `
   <div class='wish' style='left: ${getRandomY()}px; top: ${getRandomX()}px;'></div>
