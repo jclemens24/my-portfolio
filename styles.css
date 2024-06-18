@@ -52,16 +52,16 @@ nav {
   color: var(--color-text);
   text-shadow: 1px 1px 1px var(--color-secondary);
   letter-spacing: 1.2px;
+  cursor: pointer;
 }
 
 .nav__item:link {
   text-decoration: none;
 }
 
-.nav__item:hover {
-  transform: scale(1.2, 1.2) perspective(1px);
+nav.nav__item:hover {
+  transform: scale(1.1, 1.1) perspective(1px);
   transition: transform 200ms ease-in-out;
-  cursor: pointer;
 }
 
 .icon {
@@ -72,13 +72,48 @@ nav {
   z-index: 3;
 }
 
-.icon:hover {
-  transform: scale(1.1);
-}
-
 .github {
   display: flex;
   align-items: center;
+  margin-right: 3em;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown__content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--color-primary);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.dropdown:hover .dropdown__content,
+.dropdown.active .dropdown__content {
+  display: block;
+}
+
+.dropdown__item {
+  color: var(--color-text);
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.dropdown__item:hover {
+  background-color: var(--color-primary-shade1);
+  color: var(--color-primary);
+  transform: none;
+}
+
+.dropdown__item .icon {
+  margin-right: 1em;
 }
 
 #sky {
@@ -649,7 +684,7 @@ footer {
   }
 
   .about__me--name {
-    font-size: 2.5rem;
+    font-size: 2.5em;
   }
 
   .project {
@@ -708,7 +743,7 @@ footer {
   }
 
   .languages-card {
-    padding: 1em 0;
+    padding: 1em;
     align-items: flex-start;
   }
 

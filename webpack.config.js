@@ -4,13 +4,16 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const config = {
-  entry: './app.js',
+  entry: {
+    app: './src/app.js',
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[contenthash].js',
+    filename: '[name].bundle.js',
     clean: false,
     assetModuleFilename: 'images/[hash][ext]',
   },
+  // Run this optimization only in production mode
   optimization: {
     moduleIds: 'deterministic',
     runtimeChunk: 'single',
@@ -24,6 +27,10 @@ const config = {
       },
     },
   },
+  // Run this optimization in development mode
+  // optimization: {
+  //   runtimeChunk: 'single',
+  // },
   module: {
     rules: [
       {
@@ -50,6 +57,11 @@ const config = {
       },
     ],
   },
+  devtool: 'inline-source-map',
+  devServer: {
+    static: path.resolve(__dirname, 'dist'),
+    port: 9000,
+  },
   plugins: [
     new HTMLWebpackPlugin({
       filename: 'index.html',
@@ -61,7 +73,7 @@ const config = {
     }),
     new MiniCssExtractPlugin(),
   ],
-  mode: 'production',
+  mode: 'development',
 };
 
 module.exports = config;

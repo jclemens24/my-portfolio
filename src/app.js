@@ -2,7 +2,7 @@ import 'core-js/stable';
 import 'regenerator-runtime';
 import anime from 'animejs';
 import Letterize from 'letterizejs';
-import './styles.css';
+import '../styles.css';
 
 const sky = document.getElementById('sky');
 const shootingStar = document.querySelector('.shootingStar');
@@ -138,7 +138,9 @@ if (sliderExists) {
     slides.forEach(function (_, i) {
       dotsContainer.insertAdjacentHTML(
         'beforeend',
-        `<button role="button" aria-label="Go To This Slide" class="dots__dot" data-slide="${i}"></button>`
+        `<button role="button" aria-label="Go To Slide ${
+          i + 1
+        }" class="dots__dot" data-slide="${i}"></button>`
       );
     });
   };
@@ -208,4 +210,18 @@ if (sliderExists) {
 window.addEventListener('load', function () {
   starryNight();
   shootingStars();
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const dropdown = document.querySelector('.dropdown');
+
+  dropdown.addEventListener('click', function () {
+    this.classList.toggle('active');
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove('active');
+    }
+  });
 });
