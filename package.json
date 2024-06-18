@@ -12,7 +12,7 @@
   "author": "Jordan Clemens",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.17.8",
+    "@babel/core": "^7.24.7",
     "@babel/preset-env": "^7.16.11",
     "babel-loader": "^8.2.4",
     "css-loader": "^6.7.1",
